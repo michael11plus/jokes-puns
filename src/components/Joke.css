@@ -1,0 +1,61 @@
+.joke {
+    
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(242, 234, 202);
+    color: rgb(88, 32, 32);
+}
+
+.setup {
+    height: 80px;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    font-size: smaller;
+}
+
+.punchline {    
+    height: 80px;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: smaller;
+}
+
+.ratings {
+    width: 88%;
+    height: 45px;
+    display: flex;
+}
+
+.rating {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    font-size: small;
+}
+
+.noratings {
+    font-size: x-small;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    letter-spacing: 1px;
+    color: rgb(82, 82, 82);
+}
