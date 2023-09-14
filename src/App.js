@@ -1,17 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Joke from './components/Joke';
-import './App.css'
+import './App.css';
+import jokes from './jokes'
 
+const App = () => (
+    <div className='app'>
+        {jokes.map(joke => (
+            <Joke 
+                key={joke.id}
+                setup={joke.setup}
+                punchline={joke.punchline}
+                rating={joke.rating}
+                noratings={joke.noratings}
+                />
+        ))}
+    </div>
+);
+
+export default App;
+/*
 export default function App() {
     return(
     <div className="app">
-        <Joke 
+ <Joke 
             setup="I told my wife she was drawing her eyebrows too high."
             punchline="She looked surprised."
             rating="5"
             noratings="142"
-        />
+        /> 
         <Joke 
             setup="You don't need a parachute to go skydiving."
             punchline="You need a parachute to go skydiving twice."
@@ -71,3 +88,5 @@ export default function App() {
     </div>
     )
 }
+
+*/
